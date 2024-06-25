@@ -1,0 +1,128 @@
+@font-face{
+  font-family:"bariol";
+  src:url("fond/bariol-cufonfonts-webfont/bariol_bold-webfont.woff");
+}
+@font-face{
+  font-family:"Bariolthin";
+  src:url("fond/bariol-cufonfonts-webfont/bariol_thin-webfont.woff");
+}
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  background: linear-gradient(#FFFFFF, #B34EF6);
+  min-height: 100vh;
+ }
+/* HEADER */
+h1{
+  float: left;
+  margin-left: 10px;
+  font-family: bariol;
+  clear: both;
+}
+h1 a {
+  text-decoration: none;
+}
+h1 a:visited {
+  color: black;
+}
+h1 a:hover {
+  color: plum;
+}
+
+nav{
+  float: right;
+  margin-top: 10px;
+  font-family: Bariolthin;
+  
+}
+nav ul li{
+  display: inline-block;
+  margin-right: 10px;
+}
+nav ul li a {
+  text-decoration: none;
+}
+nav ul li a:visited {
+  color: black;
+}
+nav ul li a:hover {
+  color: plum;
+}
+/* MAIN */
+main{
+  clear: both;
+  margin-left: 10px;
+}
+main h3{
+  padding-top: 90px;
+  font-size: 60px;
+  font-family: Cooper;
+}
+/* SVG */
+svg{
+  width: 80%;
+  height: 80%;
+}
+.svg{
+  margin-left: 500px;
+  margin-top: -150px;
+}
+#skate{
+  animation-name: skate;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+@keyframes skate {
+  from{
+      transform: rotateY(0deg);
+ }
+  to{
+      transform: rotateY(25deg);
+  }
+}
+/* DIV APPLY */
+.apply{
+  clear: both;
+  padding-top: 50px;
+    padding: 20px;
+    text-align: center;
+    font-family: Cooper;
+
+}
+/* SVG barbecue */
+.svg-barbecue svg{
+  width: 25%;
+  height: 25%;
+}
+.svg-barbecue{
+  margin-left: 100px;
+}
+#flammes{
+  animation-name: flammes;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+@keyframes flammes{
+  0%{
+      opacity: 0;
+  }
+  50%{
+      opacity: 0.5;
+  }
+  100%{
+      opacity: 1;
+  }
+  
+}
+/* DIV ABOUT */
+.about{
+  clear: both;
+  padding: 20px;
+  padding-top: 100px;
+  text-align: center;
+  font-family: Cooper;
+}
